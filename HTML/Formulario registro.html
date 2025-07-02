@@ -7,53 +7,55 @@
     <link rel="stylesheet" href="../CSS/formulario.css">
     <link rel="icon" href="../Imágenes/Logo.png" type="image/png">
 </head>
-    <body class="cuerpo">
-        <div class ="Formulario_container">
-            <h1 class="titulo">Regístrate y no te pierdas nada</h1>
-                <form class="Formulario">
-                    <fieldset>
-                        <legend>Datos digitales</legend>
-                            <label title="Click aquí para el email">Email
-                                <br><input type="email" class="formulario_input" name="userEmail" placeholder="ejemplo@gmail.com" required >
-                            </label>
-                            <label title="Click aquí para la contraseña">Contraseña
-                                <br><input type="password" class="formulario_input" name="userPasword" placeholder="pasword1234" required>
-                            </label>
+    <body class="cuerpo-pagina"> 
+        <div class="formulario-contenedor"> 
+            <h1 class="formulario-contenedor__titulo">Regístrate y no te pierdas nada</h1> <form class="formulario"> 
+                <fieldset class="formulario__grupo-campos"> 
+                    <legend class="formulario__grupo-campos-titulo">Datos digitales</legend> 
+                        <label class="formulario__etiqueta" title="Click aquí para el email">Email
+                                <br><input type="email" class="formulario__campo-entrada" name="userEmail" placeholder="ejemplo@gmail.com" required>
+                        </label>
+                        <label class="formulario__etiqueta" title="Click aquí para la contraseña">Contraseña
+                                <br><input type="password" class="formulario__campo-entrada" name="userPasword" placeholder="pasword1234" minlength="6" maxlength="8" required>
+                                    <p class="formulario__campo-entrada--descripción">Debe contener entre 6 y 8 caracteres</p>
+                        </label>
+                </fieldset>
+            <label class="formulario__etiqueta" title="Click aquí para las aportaciones">Aportaciones
+                <br><textarea class="formulario__textarea" placeholder="Me gustaría que..." maxlength="450">
+                    </textarea> 
+            </label>
+                <fieldset class="formulario__grupo-campos"> 
+                    <legend class="formulario__grupo-campos-titulo">Datos personales</legend> 
+                        <label class="formulario__etiqueta" title="Click aquí para el nombre">Nombre
+                                <br><input type="text" class="formulario__campo-entrada" name="userName" placeholder="Beny JR" required> </label>
+                        <label class="formulario__etiqueta" title="Click aquí para el apellido">Apellido
+                                <br><input type="text" class="formulario__campo-entrada" name="userLastName" placeholder="De la rosa" required> </label>
+                        <label class="formulario__etiqueta" title="Click aquí para la edad">Edad
+                            <br>
+                            <select class="formulario__select" name="userAge"> <option value="">Selecciona tu edad</option>
+                                <option value="18-24">18-24</option>
+                                <option value="25-34">25-34</option>
+                                <option value="35-44">35-44</option>
+                                <option value="45-54">45-54</option>
+                                <option value="55-64">55-64</option>
+                                <option value="65+">65+</option>
+                            </select>
+                        </label>
                     </fieldset>
+                    <label class="formulario__etiqueta" title="Escriba quién le recomendó la página">Recomendado por...
+                        <br><input list="recomendado" name="recomendado" class="formulario__campo-entrada" placeholder="Un amigo"> 
+                            <datalist id="recomendado">
+                                <option value="David Gil Alarcón">El creador</option>
+                                <option value="Familiar">Un familiar del creador</option>
+                                <option value="Amigos">Un amigo del creador</option>
+                            </datalist>
                     </label>
-                    <label title="Click aquí para las aportaciones">Aportaciones
-                        <br><textarea placeholder="Me gustaría que..." maxlength="450"></textarea>
+                    <br>
+                    <label class="formulario__etiqueta" title="Marque esta casilla para aceptar las condiciones">Acepte las <a href="Terminos y condiciones.html" class="formulario__etiqueta--enlace">condiciones</a>
+                        <input type="checkbox" name="condiciones" class="formulario__checkbox" required> 
                     </label>
-                    <fieldset>
-                        <legend>Datos personales</legend>
-                            <label title="Click aquí para el Nombre y apellidos">Nombre completo
-                            <br><input type="text" class="formulario_input" name="userName" placeholder="Rodolfo Augusto Pérez" required>
-                            </label>
-                            <label title="Click aquí para específicar su edad">Edad
-                                <select name="user-age" required>
-                                    <option value="" disabled selected>Seleccione su edad</option>
-                                    <option value="-18">-18</option>
-                                    <option value="18-24">18-24</option>
-                                    <option value="25-34">25-34</option>
-                                    <option value="35-44">35-44</option>
-                                    <option value="45-54">45-54</option>
-                                    <option value="55-64">55-64</option>
-                                    <option value="65+">65+</option>
-                                </select>
-                            </label>
-                    </fieldset>
-                    <label title="Escriba quién le recomendó la página">Recomendado...
-                        <br><input list="recomendado" name="recomendado" class="user-recomendated">
-                        <datalist id="recomendado" name="user-recomendated">
-                            <option value="David Gil Alarcón">El creador</option>
-                            <option value="Familiar">Un familiar del creador</option>
-                            <option value="Amigos">Un amigo del creador</option>
-                    </label>
-                    <br><label title="Marque esta casilla para aceptar las condiciones">Acepte las <a href="Terminos y condiciones.html">condiciones</a>
-                        <input type="checkbox" name="condiciones" class="checkbox" required>
-                    </label>
-                    <br><input type="submit" value="Regístrate" class="formulario_submit">    
-    </form>
-    </div>
-</body>
+                    <br><input type="submit" value="Regístrate" class="formulario__boton-enviar"> 
+            </form>
+        </div>
+    </body>
 </html>
