@@ -1,12 +1,13 @@
 .cuerpo-pagina { 
-    background-image: url(https://cdn-images.dzcdn.net/images/cover/31987cc289d4606125e556a11cfd54cb/0x1900-000000-80-0-0.jpg);
+    background-image: url(https://cdn-images.dzcdn.net/images/cover/11927949f9898cb5d886d966dc14155b/1900x1900-000000-80-0-0.jpg);
     background-attachment: fixed;
     margin: 40px;
     height: 120%;
 }
 
 .titulo-principal {
-    color: rgb(255, 255, 255);
+    color: black;
+    background-color: rgba(255, 255, 255, 0.671);
     text-align: center;
     font-family: comic sans ms;
     text-decoration: underline;
@@ -24,7 +25,7 @@
 }
 
 .cancion-item { /* Bloque para cada div individual de canción */
-    background-color: #3d456ece;
+    background-color: rgba(255, 255, 255, 0.301);
     width: 20vw;
     margin-top: 4vh;
     padding: 1px 1px 30px 5px;
@@ -37,7 +38,7 @@
 }
 
 .cancion-item--compacto { /* Modificador para .div-corto */
-    height: 50vh;
+    height: 45vh;
 }
 
 .cancion-item__link { /* Elemento para los 'a' y los "h2" dentro de cancion-item */

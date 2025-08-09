@@ -1,16 +1,17 @@
 .cuerpo-pagina {
-    background: linear-gradient(rgb(0, 132, 255), rgb(0, 255, 221));
+    background: linear-gradient(grey, rgba(0, 0, 0, 0.938));
     margin: 0;
 }
 
 .imagen-cabezera {
-    background-image: url(https://cdn-images.dzcdn.net/images/cover/b91a10713004f21a2b62ac08dc1b13c6/500x500.jpg);
+    background-image: url(https://cdn-images.dzcdn.net/images/cover/de5d0fde35ed4b805acb9e809a5b8ff2/0x1900-000000-80-0-0.jpg);
     height: 250px;
     background-attachment: fixed;
 }
 
 .imagen-cabezera__titulo { /* Título de la página*/
-    color: rgb(255, 255, 255);
+    color: white;
+    background-color: rgba(128, 128, 128, 0.562);
     text-align: center;
     font-family: comic sans ms;
     text-decoration: underline;
@@ -51,6 +52,7 @@
     border-radius: 10px;
     box-shadow: 0 0 40px 0 black;
     margin: auto;
+    font-size: 17px;
 }
 
 .info-principal {
@@ -59,19 +61,15 @@
     margin-bottom: 26px;
 }
 
-.info-principal__resaltado { /*Palabras en nergrita del primer bloque de contenido*/
-    font-size: 1.3em;
-}
-
 .seccion-info, /* Encabezado enlace principales canciones*/
 .cancion-principal-info, /*Título "Canción más escuchada*/
 .cancion-principal-titulo { /* Agrupando estilos comunes para títulos/encabezados */
-    color: rgb(68, 47, 255);
+    color: white;
     text-align: center;
     font-family: comic sans ms;
-    background-color: rgb(0, 195, 255);
+    background-color: grey;
     padding: 5px;
-    border: 5px solid black;
+    border: 5px solid transparent;
     border-radius: 30px;
     box-shadow: 0 0 40px 0 black;
     box-sizing: border-box;
@@ -79,7 +77,7 @@
 }
 
 .seccion-info {
-    text-decoration: underline;
+    text-decoration: none;
     width: 400px;
     margin-top: 10px;
     margin-left: 60px;
@@ -93,7 +91,7 @@
 .imagen-fondo-secundario {
     width: 100%;
     height: 630px;
-    background-image: url(https://cdn-images.dzcdn.net/images/cover/31987cc289d4606125e556a11cfd54cb/0x1900-000000-80-0-0.jpg);
+    background-image: url(https://cdn-images.dzcdn.net/images/cover/8b50f165b27f73c9a7a4c4c2779a0d7b/0x1900-000000-80-0-0.jpg);
     margin: 0;
     background-attachment: fixed;
     background-position: top;
@@ -134,27 +132,29 @@
 }
 
 .video-cancion {
-    position: absolute;
-    left: 500px;
-    top: 1320px;
+    position:absolute ;
+    left: 640px;
+    top: 130%;
     height: 300px;
     width: 300px;
 }
 
 .cancion-principal-info {
-    text-decoration: underline;
+    font-size: 25px;
     position: absolute;
-    top: 1350px;
-    right: 20px;
-    width: 400px;
+    top: 125%;
+    right: 16%;
+    width: 250px;
+    padding: 2px; 
     margin-left: 60px; 
+    text-decoration: none; 
 }
 
 .cancion-principal-titulo {
     font-size: 15px;
     position: absolute;
-    top: 1320px;
-    right: 575px;
+    top: 128%;
+    right: 52%;
     width: 250px;
     padding: 2px; 
     margin-left: 60px; 
@@ -163,12 +163,12 @@
 
 .detalles-cancion {
     position: absolute;
-    right: 20px;
+    right: 10%;
     border: 2px solid white;
     background-color: rgba(192, 192, 192, 0.521); 
     box-shadow: 0 0 20px 0 black; 
-    top: 1430px;
-    font-size: 10px;
+    top: 1350px;
+    font-size: 14px;
     font-weight: bold;
 }
 

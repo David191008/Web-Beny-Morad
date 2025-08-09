@@ -1,0 +1,188 @@
+.cuerpo-pagina {
+    background: linear-gradient(rgb(0, 132, 255), rgb(0, 255, 221));
+    margin: 0;
+}
+
+.imagen-cabezera {
+    background-image: url(https://cdn-images.dzcdn.net/images/cover/b91a10713004f21a2b62ac08dc1b13c6/500x500.jpg);
+    height: 250px;
+    background-attachment: fixed;
+}
+
+.imagen-cabezera__titulo { /* Título de la página*/
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: comic sans ms;
+    text-decoration: underline;
+    margin: auto;
+    padding: 22px;
+    width: 70vw;
+    border: 10px transparent;
+    box-shadow: 0 0 40px 0 black;
+    border-radius: 100px;
+    font-size: 50px;
+}
+
+.boton-registro {
+    position: fixed;
+    top: 5px;
+    right: 20px;
+    background: black;
+    box-shadow: 0 0 40px 0 black;
+    border: 5px transparent;
+    border-radius: 10px;
+    padding: 6px;
+    color: white;
+}
+
+.boton-registro:hover {
+    background: white;
+    color: black;
+}
+
+.info-principal,
+.curiosidades,
+.detalles-cancion { /* Agrupando estilos comunes para los bloques de contenido y una parte del desplegable que hay a la derecha de canción que es esta última */
+    font-family: comic sans ms;
+    text-align: justify;
+    background-color: rgba(192, 192, 192, 0.63);
+    border-left: 5px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 0 black;
+    margin: auto;
+}
+
+.info-principal {
+    width: 80vw;
+    margin-top: 15px;
+    margin-bottom: 26px;
+}
+
+.info-principal__resaltado { /*Palabras en nergrita del primer bloque de contenido*/
+    font-size: 1.3em;
+}
+
+.seccion-info, /* Encabezado enlace principales canciones*/
+.cancion-principal-info, /*Título "Canción más escuchada*/
+.cancion-principal-titulo { /* Agrupando estilos comunes para títulos/encabezados */
+    color: rgb(68, 47, 255);
+    text-align: center;
+    font-family: comic sans ms;
+    background-color: rgb(0, 195, 255);
+    padding: 5px;
+    border: 5px solid black;
+    border-radius: 30px;
+    box-shadow: 0 0 40px 0 black;
+    box-sizing: border-box;
+    font-size: 18px; 
+}
+
+.seccion-info {
+    text-decoration: underline;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+.seccion-info--centrado {
+    margin: auto;
+    margin-bottom: 13px;
+}
+
+.imagen-fondo-secundario {
+    width: 100%;
+    height: 630px;
+    background-image: url(https://cdn-images.dzcdn.net/images/cover/31987cc289d4606125e556a11cfd54cb/0x1900-000000-80-0-0.jpg);
+    margin: 0;
+    background-attachment: fixed;
+    background-position: top;
+}
+
+.curiosidades { /*Segundo bloque de contenido*/
+    width: 89vw;
+    margin-top: 10px;
+    background-color: rgba(192, 192, 192, 0.521);
+    padding: 5px; 
+}
+
+.curiosidades__link-cancion,
+.enlaces-redes { /* Agrupando estilos comunes para los enlaces de botón */
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: comic sans ms;
+    background-color: rgba(128, 128, 128, 0.466);
+    border: 10px transparent;
+    border-left: 5px solid;
+    border-radius: 12px;
+    padding: 7px;
+    font-size: 18px;
+    display: block;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.curiosidades__link-cancion:hover,
+.enlaces-redes:hover { /* Agrupando estilos comunes para los enlaces de botón */
+    color: black;
+    background-color: white;
+}
+
+.curiosidades__link-cancion {
+    width: 250px;
+}
+
+.video-cancion {
+    position:absolute ;
+    left: 640px;
+    top: 130%;
+    height: 300px;
+    width: 300px;
+}
+
+.cancion-principal-info {
+    font-size: 25px;
+    position: absolute;
+    top: 125%;
+    right: 16%;
+    width: 250px;
+    padding: 2px; 
+    margin-left: 60px; 
+    text-decoration: none; 
+}
+
+.cancion-principal-titulo {
+    font-size: 15px;
+    position: absolute;
+    top: 128%;
+    right: 52%;
+    width: 250px;
+    padding: 2px; 
+    margin-left: 60px; 
+    text-decoration: none; 
+}
+
+.detalles-cancion {
+    position: absolute;
+    right: 10%;
+    border: 2px solid white;
+    background-color: rgba(192, 192, 192, 0.521); 
+    box-shadow: 0 0 20px 0 black; 
+    top: 1350px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.detalles-cancion__titulo {
+    padding: 5px;
+}
+
+.detalles-cancion__lista {
+    padding: 20px;
+    border-top: 1px solid white;
+}
+
+.enlaces-redes {
+    width: 130px;
+}

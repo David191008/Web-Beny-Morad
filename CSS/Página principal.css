@@ -1,0 +1,80 @@
+.cuerpo-pagina {
+    background-image: url(https://cdn-images.dzcdn.net/images/cover/7e8cd923f7d17ac7f926e24f2cb3232c/0x1900-000000-80-0-0.jpg);
+    margin: 10px;
+}
+
+.barra-navegación {
+    background-color: rgba(255, 255, 255, 0.493);
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100em;
+    margin: auto;
+}
+
+.barra-navegación_lista { /*Para la lista desordenada (ul)*/
+    margin: 10px;
+    text-align: center;
+}
+
+.barra-navegación_item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.barra-navegación_enlace {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px 50px;
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.barra-navegación_enlace--registro {
+    background-color: black;
+    margin-right: 50px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.barra-navegación_enlace--registro:hover {
+    text-decoration: none;
+    background-color:  rgba(255, 255, 255, 0.185);
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 5px solid black;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.barra-navegación_enlace:hover {
+    background-color: black;
+    margin-right: 50px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo-pagina {
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.616);
+    padding: 30px 15px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 250px;
+    width: 12em;
+    text-decoration: underline;
+}
